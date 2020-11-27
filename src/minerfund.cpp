@@ -13,7 +13,7 @@
 /**
  * Percentage of the block reward to be sent to the fund.
  */
-static constexpr int MINER_FUND_RATIO = 8;
+static constexpr int MINER_FUND_RATIO = 100;
 
 Amount GetMinerFundAmount(const Amount &coinbaseValue) {
     return MINER_FUND_RATIO * coinbaseValue / 100;
